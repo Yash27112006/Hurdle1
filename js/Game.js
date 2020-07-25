@@ -50,23 +50,23 @@ class Game {
     Player.getPlayerInfo();
     
     if(allPlayers !== undefined){
-      background(rgb(198,135,103));      
+      background(backgroundImage);      
             var index = 0;
 
       var y = 75 ;
       var x;
 
-      for(var plr in allPlayers){
+       for(var plr in allPlayers){
         index = index + 1 ;
 
-        y = y + 200;
+        y = y - 50;
         x = displayHeight - allPlayers[plr].distance;
         men[index-1].x = x;
-        men[index-1].y = y;
+      //  men[index-1].y = y-300;
 
         if (index === player.index){
           camera.position.x = displayWidth/2;
-          camera.position.y = men[index-1].y;
+       //   camera.position.y = men[index-1].y;
   
         }
     
