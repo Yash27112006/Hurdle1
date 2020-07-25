@@ -18,6 +18,7 @@ function preload(){
   man3_img = loadImage("images/car3.png");
   man4_img = loadImage("images/car4.png");
   ground = loadImage("images/ground.png");
+  backgroundImage = loadImage("back.jpg");
 }
 
 function setup(){
